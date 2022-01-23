@@ -200,7 +200,7 @@ footer{
     width: 100%;
     height: 20%;
     margin-top: 20px;
-    color: rgba(192, 192, 192, 0.5);
+    color: rgba(192, 192, 192, 0.877);
 }
 .last{
     margin-top: 3px;
@@ -209,33 +209,46 @@ footer{
 .last a {
     margin-right: 10px;
     list-style: none;
-    color: rgba(192, 192, 192, 0.5);
+    color: rgba(192, 192, 192, 0.877);
 }
-@media only screen and (max-width:1630px){
+@media only screen and (max-width:1670px){
 
     .image img{
-        width: 100%;
+       width: auto;
         height: 100%;
     }
     .image {
+        margin-right: 2%;
+        flex:.5;
         border: 10px solid #262626;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 80vh;
+        width: 150%;
+        height: 50vh;
     }
     main{
-        padding:0;
+        padding: 0;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .content{
+        padding: 2%;
+    }
+    .personal{
+        width: 50vw;
+        height: 60vh;
+    }
+    .personal img{
+        height: 100%;
+        width: 100%;
     }
 }
-@media only screen and (max-width:1320px){
+@media only screen and (max-width:1358px){
     ul, ul li {
         word-spacing: 2em;
     }
 
 }
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1359px){
 
     main{
         flex-direction: column;
