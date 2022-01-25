@@ -314,6 +314,155 @@ footer {
 	width: 100%;
 
 }
+
+/* schedule site */
+.schedulemain{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10%;
+	height: 100%;
+}
+.scheduleright{
+	flex:1;
+	margin-top: 93px;
+}
+.scheduleleft{
+	flex:1;
+	margin-top: 93px;
+}
+.girlworkout{
+	align-self: center;
+	display: grid;
+	place-items: center;
+	margin: 20px 0;
+	width: 35vw;
+}
+.girlworkout > img {
+	width: 100%;
+}
+.SR{
+	display: flex;
+	flex-direction: column;
+	
+}
+.WH{
+	color:#262626;
+	font-size: 4em;
+	font-weight: bold;
+}
+.problems{
+	color:#717171;
+	font-size: 1.7em;
+}
+
+.time {
+	align-self: flex-end;
+	text-align: end;
+	padding:6px 15px;
+	word-spacing: 150px;
+	display: grid;
+	font-weight: bold;
+	width: 18em;
+	font-size: 2em;;
+	height: 1.8em;
+	margin: 20px 0px;
+
+	color: snow;
+	background-color: #f75f88;
+}
+
+
+.time:nth-child(6){
+	background-color: #262626;
+}
+.time:nth-child(7){
+	background-color: #262626;
+}
+
+.membershipmain{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5% 20%;
+}
+.bm{
+	flex:1;
+}
+.bm1{
+	color:#262626;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: left;
+}
+.runners{
+	align-self: center;
+	border: 10px solid #262626;
+	display: grid;
+	place-items: center;
+	margin: 20px 0;
+}
+.runners img{
+	width: 100%;
+}
+
+.under{
+	color:#717171;
+	text-align: left;
+	font-size: 1.3em;
+}
+.tp{
+	font-size: 4em;
+	color: #262626;
+	font-weight: bold;
+	margin:20px 0px;
+}
+.prices{
+	flex:1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.pr{
+	width: 15em;
+	background-color: #f75f88;
+	color: snow;
+	height: 3.7em;
+	margin: 0 20px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 15px 0;
+}
+.pr:first-child{
+	padding: 30px 0;
+}
+.buypass{
+	flex:1;
+	display: flex;
+}
+.pass{
+	background-color: #262626;
+	color: #f75f88;
+	font-size: 1.5em;
+	width: 10em;
+	height: 2.5em;
+	margin: 0 85px;
+	margin-top: 35px;
+	padding: 13px 0px;
+	text-align: center;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	user-select: none;
+}
+.pass:hover{
+	transform: scale(1.1);
+	background-color: #f75f88;
+	color: #ffffff;
+}
 @media only screen and (max-width: 1670px) {
 	.logo {
 		margin-right: 40px;
@@ -387,6 +536,19 @@ footer {
 		font-size: 1em;
 	}
 }
+@media only screen and (max-width: 1180px){
+
+	.prices{
+		flex-direction: column;
+	}
+	.pr{
+		margin: 10px 0;
+	}
+	.buypass{
+		flex-direction: column;
+	}
+	
+}
 
 @media only screen and (max-width: 990px) {
 	.logo {
@@ -398,7 +560,11 @@ footer {
 	.BT{
 		font-size: .7em;
 	}
+	.schedulemain{
+		flex-direction: column;
+	}
 }
+
 @media only screen and (max-width: 772px) {
 	.logo {
 		margin-right: 10px;
