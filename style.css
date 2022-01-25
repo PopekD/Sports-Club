@@ -65,7 +65,7 @@ a:link {
 	padding: 1em 1em;
 }
 .login > a:hover {
-	color: #ffffff;
+	color: #c0c0c0;
 	transform: scale(1.05);
 }
 
@@ -226,6 +226,94 @@ footer {
 	padding-right: 15px;
 }
 
+
+/* contact page */
+
+
+.contactmain{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+	padding: 0 10%;
+}
+.contactinfo {
+	flex: 1;
+	margin-top: 100px;
+}
+.CU{
+	font-size: 3em;
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-left: 100px;
+}
+.normalt {
+	font-size: 20px;
+	color: #717171;
+}
+.normalt1{
+		font-size: 20px;
+		color: #717171;
+		margin-left: 100px;
+}
+.BT {
+	display: flex;
+	margin: 30px 0;
+	
+}
+.BT1{
+	background-color: #f75f88;
+	flex:1;
+	background-size: cover;
+	margin: 0 100px;
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+	padding: 11.2px 20px;
+	color: snow;
+}
+
+.CT{
+	display: flex;
+	align-items: center;
+}
+.Office{
+	flex: 2;
+	margin-left: 100px;
+}
+.bold{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #717171;
+}
+.SC{
+	flex: 1;
+	padding-left:100px;
+}
+.SC1{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #717171;
+	
+}
+.SC2{
+	flex:1;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #717171;
+	margin-top: 24px;
+}
+.contactimage {
+	align-self: center;
+	border: 10px solid #262626;
+	display: grid;
+	place-items: center;
+	margin: 20px 0;
+}
+.contactimage img {
+	width: 100%;
+
+}
 @media only screen and (max-width: 1670px) {
 	.logo {
 		margin-right: 40px;
@@ -244,6 +332,29 @@ footer {
 		padding: 2%;
 	}
 }
+@media only screen and (max-width: 1410px) {
+	.BT{
+		flex-direction: column;
+	}
+	.BT1:nth-child(1){
+		margin: 20px 100px;
+	}
+	.CT{
+		flex-direction: column;
+		
+	}
+	.Office{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	.SC{
+		padding: 0;
+		margin: 0;
+		margin-top: 20px;
+	}
+}
+
 @media only screen and (max-width: 1359px) {
 	.logo {
 		margin-right: 30px;
@@ -283,6 +394,9 @@ footer {
 	}
 	header {
 		padding: 0 2.5vw;
+	}
+	.BT{
+		font-size: .7em;
 	}
 }
 @media only screen and (max-width: 772px) {
@@ -324,3 +438,4 @@ footer {
 		text-align: center;
 	}
 }
+
