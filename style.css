@@ -47,7 +47,9 @@ a:link {
 	color: inherit;
 	text-decoration: none;
 }
-
+.reg:visited{
+	color: #f75f88;
+}
 .menu1 {
 	display: flex;
 	flex: 1;
@@ -238,7 +240,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	height: 100%;
+
 	padding: 0 10%;
 }
 .contactinfo {
@@ -326,7 +328,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 0 10%;
-	height: 100%;
+	height: 100vh;
 }
 .scheduleright{
 	flex:1;
@@ -391,6 +393,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 5% 20%;
+	
 }
 .bm{
 	flex:1;
@@ -558,6 +561,26 @@ footer {
 	.logo {
 		margin-right: 20px;
 	}
+	.time{
+		align-self: center;
+		width: 18em;
+		font-size: 1em;
+		text-align: center;
+		word-spacing: 0;
+		margin: 10px 0px;
+	}
+	.WH{
+		font-size: 1.6em;
+	}
+	.problems{
+		font-size: 1em;
+	}
+	.scheduleleft{
+		flex:0;
+	}
+	.scheduleright{
+		margin-top: 50px;
+	}
 	header {
 		padding: 0 2.5vw;
 	}
@@ -569,12 +592,15 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 772px) {
+@media only screen and (max-width: 811px) {
 	.logo {
 		margin-right: 10px;
 	}
 	header {
 		padding: 0;
+	}
+	.footer{
+		position: absolute;
 	}
 	.menu1{
 		display: none;
@@ -625,7 +651,12 @@ h2 {
 	height: 100%;
 	padding: 0 3%;
   }
-  
+  .membershipmain{
+	  height: 100vh;
+  }
+  .contactmain{
+	  height: 100vh;
+  }
   .menu-button-container {
 	height: 100%;
 	width: 30px;
@@ -709,56 +740,97 @@ h2 {
     color: white;
     background-color: #222;
   }
+  .CU{
+	  font-size: 2em;
+	  margin: 0;
+	  padding: 0;
+  }
+  .normalt1{
+	  margin: 0;
+  }
+  .BT{
+	  margin: 20px 0 ;
+  }
+  .BT1{
+	  margin:10px 0px;
+  }
+  .BT1:nth-child(1){
+	  margin: 10px 0px;
+  }
+  .CT{
+	  align-items: baseline;
+  }
+  .Office{
+	  align-self: baseline;
+	  text-align: inherit;
+  }
+  .bold{
+	  font-size: .9em;
+  }
+  .SC1{
+	  font-size: 1em;
+  }
+  .SC2{
+	  font-size: 1em;
+  }
+  .contactimage{
+	  margin: auto;
+  }
+  .contactinfo{
+	  flex: 0;
+  }
+
+  .buypass{
+	width: 14em;
+}
+
+.pass{
+	width: 10em;
+	font-size: 1em;
+	margin: 20px 0px;
+	align-self: center;
+
+}
+.pass:nth-child(2){
+	display: none;
+}
+.pass:nth-child(3){
+	display: none;
+}
+.bm1{
+	font-size: 1em;
+	margin-top: 100px;
+}
+.under {
+	font-size: 15px;
+}
+.tp{
+	font-size: 30px;
+	width: 7.5em;
+	text-align: center;
+}
+.prices{
+	width: 14em;
+}
+.pr{
+	width: 14em;
+	font-size: 1em;
+	padding: 0px 0px;
+	padding-top:5px;
+	height: 3em;
+	align-self: flex-start;
+}
+.pr:first-child{
+	padding: 15px 0px;
+	height: 3em;
+}
+
 }
 @media only screen and (max-width: 526px) {
 	h2 {
 		font-size: 1.5em;
 	}
-	.bm1{
-		font-size: 1em;
-		margin-top: 100px;
-	}
-	.under {
-		font-size: 15px;
-		width: 15em;
-	}
-	.tp{
-		font-size: 30px;
-		width: 7.5em;
-		text-align: center;
-	}
-	.prices{
-		width: 14em;
-	}
-	.pr{
-		width: 14em;
-		font-size: 1em;
-		padding: 0px 0px;
-		padding-top:5px;
-		height: 3em;
-		align-self: flex-start;
-	}
-	.pr:first-child{
-		padding: 15px 0px;
-		height: 3em;
-	}
-	.buypass{
-		width: 14em;
-	}
-
-	.pass{
-		width: 10em;
-		font-size: 1em;
-		margin: 20px 0px;
-		align-self: center;
-
-	}
-	.pass:nth-child(2){
-		display: none;
-	}
-	.pass:nth-child(3){
-		display: none;
-	}
+	
 	.text {
 		font-size: 0.7em;
 	}
@@ -767,4 +839,11 @@ h2 {
 	}
 	
 }
-
+@media only screen and (max-width: 380px){
+	footer{
+		margin-top: 40%;
+	}
+	.bm{
+		margin-top: 120px;
+	}
+}
