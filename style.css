@@ -839,11 +839,21 @@ h2 {
 	}
 	
 }
+
 @media only screen and (max-width: 380px){
+	footer{
+		margin-top: 10%;
+	}
+	.bm{
+		margin-top: 20px;
+	}
+}
+/*@media only screen and (max-width: 380px){
+
 	footer{
 		margin-top: 40%;
 	}
 	.bm{
 		margin-top: 120px;
 	}
-}
+}*/
