@@ -15,7 +15,8 @@
             <div class="contactinfo">
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
-                    <div class="BT">
+
+                <div class="BT">
                         <div class="BT1">E-mail: inquiries@hsc.fi</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
                     </div>
@@ -39,6 +40,7 @@
                     </div>
 
             </div>
+      
             <div class="contactimage"><img src="../images/contactimage.jpg" alt="building"></div>
         </div>
 	    <?php
