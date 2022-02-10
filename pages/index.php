@@ -11,6 +11,7 @@
 	<?php
 		include "header.php";                
 	?>
+	<!-- addd -->
 		<main>
 			<div class="content">
 				<h2>Build your body <br />and mind here</h2>
