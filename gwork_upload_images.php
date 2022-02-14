@@ -14,9 +14,9 @@
          <input type = "submit"/>
 			
     
-    <p>Sent file: <?php echo $_FILES['image']['name'];  ?></p>
-    <p>File size: <?php echo $_FILES['image']['size'];  ?></p>
-    <p>File type: <?php echo $_FILES['image']['type'] ?></p>
+    <p>Sent file: <?php if(isset($_FILES['image'])){echo $_FILES['image']['name']; } ?></p>
+    <p>File size: <?php if(isset($_FILES['image'])){echo $_FILES['image']['size']; } ?></p>
+    <p>File type: <?php if(isset($_FILES['image'])){echo $_FILES['image']['type']; } ?></p>
        
 			
       </form>
