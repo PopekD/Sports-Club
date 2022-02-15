@@ -1,6 +1,5 @@
 <?php
 
-
 #TASK 1
 
 $filename = 'testfile.txt';
@@ -13,16 +12,10 @@ if (file_exists($filename)) {
 }
 
 fopen("testfile.txt", "r+"); // opened the file in the read and write mode
-fwrite($newfile, "Team 11: Denis Fedulov, Dawid Popek, Imran Irshad"); // wrote to the file team name and team members names
+fwrite($newfile, "Team 11, Denis Fedulov"); // wrote to the file team name and team members names
 fread($newfile, filesize($filename)); // read the file
 fclose($newfile); // closed the file
 
-
 #TASK 2
-
-
-
-
-
 
 ?>
