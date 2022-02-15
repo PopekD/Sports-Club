@@ -16,6 +16,4 @@ fwrite($newfile, "Team 11, Denis Fedulov"); // wrote to the file team name and t
 fread($newfile, filesize($filename)); // read the file
 fclose($newfile); // closed the file
 
-#TASK 2
-
 ?>
