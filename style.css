@@ -474,6 +474,64 @@ footer {
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+.paymain{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 80px 100px;
+	min-height: 100%;
+	margin: 0;
+}
+.pselect{
+	flex: 1;
+	margin-right: 10px;
+	height: 80vh;
+	width: 20vw;
+	position: relative;
+	border-radius: 11px;
+	background: #f75f88;
+	text-align: center;
+	color: snow;
+	padding: 10px 0px;
+	font-size: 1.5em;
+	border: 5px solid black;
+}	
+.pselect:last-child{
+	margin-right: 0;
+}
+.pselect:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.cform{
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	min-height: 40vh;
+	justify-content: center;
+	padding: 0 20px;
+	border: #222 solid 2px;
+	align-items: baseline;
+	font-size: 1em;
+	position: absolute;
+	display: none;
+	transform: translateX(150%);
+}
+
+.sform{
+display: flex;
+flex-direction: row;
+padding-top: 10px;
+width: 100%;
+justify-content: space-evenly;
+}
+.line{
+	width: 100%;
+}
+
+
 @media only screen and (max-width: 1670px) {
 	.logo {
 		margin-right: 40px;
