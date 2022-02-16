@@ -8,8 +8,8 @@ echo "<header>
 				<a href=\"contact.php\">Contact</a>
 			</div>
 			<div class=\"login\">
-				<a href=\"#\">Sign Up</a>
-				<a href=\"#\">Log In</a>
+				<a href=\"signup.php\">Sign Up</a>
+				<a href=\"login.php\">Log In</a>
 			</div>
 			<section class=\"top-nav\">
 				<div class=\"logo2\">
