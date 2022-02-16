@@ -74,7 +74,7 @@ a:link {
 	padding: 1em 1em;
 }
 .login > a:hover {
-	color: #c0c0c0;
+	color: #ffffff;
 	transform: scale(1.05);
 }
 
@@ -256,6 +256,7 @@ footer {
 	margin-bottom: 20px;
 	margin-left: 100px;
 }
+
 .normalt {
 	font-size: 20px;
 	color: #717171;
