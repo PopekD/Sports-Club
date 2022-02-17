@@ -19,6 +19,7 @@
 					We provide gym, two huge pools, saunas and joga places.
 				</p>
 				<div class="operation">
+					<!-- onclick these two buttons will take to the schedule and contact pages: -->
 					<div class="button" onclick="window.location.href='./schedule.php';">Get Started</div>
 					<div class="button" onclick="window.location.href='./contact.php';"> About us</div>
 				</div>
