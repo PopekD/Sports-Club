@@ -6,14 +6,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HSC - the place your body needs</title>
-	</head>
+		</head>
 	<body>
 	<?php
 		include "header.php";                
 	?>
 		<main>
 			<div class="content">
-				<h2>Build your body <br />and mind here</h2>
+					<h2>Build your body <br />and mind here</h2>
 				<p class="text">
 					Enjoy modern sports club in the center of Hämeenlinna!<br />
 					We provide gym, two huge pools, saunas and joga places.
