@@ -1,5 +1,5 @@
 <?php
-$servername = "172.18.0.4";
+$servername = "172.18.0.3";
 $port = 3306;
 $username = "root";
 $password = "password";
@@ -12,5 +12,10 @@ $conn = new mysqli($servername, $username, $password, $dbname, $port);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+<<<<<<< Updated upstream
 echo "Connected successfully";
 ?> 
+=======
+// echo "Connected successfully";
+?> 
+>>>>>>> Stashed changes
