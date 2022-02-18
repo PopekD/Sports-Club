@@ -1,12 +1,11 @@
 <?php
-$servername = "172.18.0.3";
-$port = 3306;
+$servername = "db";
 $username = "root";
 $password = "password";
-$dbname = "HSC";
+$dbname = "hsc";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
