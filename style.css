@@ -476,27 +476,34 @@ footer {
 	color: #ffffff;
 }
 
+#paybody{
+	background-image: url("images/02.jpg");
+}
+
 .paymain{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	min-height: 100%;
 	padding: 80px 100px;
 	min-height: 100%;
 	margin: 0;
+	
 }
 .pselect{
 	flex: 1;
 	margin-right: 10px;
-	height: 80vh;
+	min-height: 80vh;
 	width: 20vw;
+	display: grid;
+	user-select: none;
 	position: relative;
 	border-radius: 11px;
 	background: #f75f88;
+	opacity: 0.96;
 	text-align: center;
 	color: snow;
-	padding: 10px 0px;
 	font-size: 1.5em;
-	border: 5px solid black;
 }	
 .pselect:last-child{
 	margin-right: 0;
@@ -504,21 +511,24 @@ footer {
 .pselect:hover{
 	cursor: pointer;
 	opacity: 0.7;
+	background-color: #262626;
+}
+.pselect:active{
+	background-color: #262626;
 }
 
-.cform{
-	display: flex;
+#cform{
 	flex-direction: column;
-	width: 20vw;
-	min-height: 40vh;
+	width: 30vw;
 	justify-content: center;
-	padding: 0 20px;
-	border: #222 solid 2px;
+	padding: 70px 20px;
 	align-items: baseline;
-	font-size: 1em;
+	font-size: 2em;
 	position: absolute;
 	display: none;
-	transform: translateX(150%);
+	color: snow;
+	transform: translateX(120%);
+	background-color: #f75f88;
 }
 
 .sform{
@@ -528,8 +538,18 @@ padding-top: 10px;
 width: 100%;
 justify-content: space-evenly;
 }
+#paymentbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
 .line{
 	width: 100%;
+	height: 2.5em;
 }
 
 

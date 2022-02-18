@@ -38,9 +38,9 @@
         </div>
 
         <div class="buypass">
-            <div class="pass" ><a href="payment.php">Buy a pass now</a></div>
-            <div class="pass"><a href="payment.php">Buy a pass now</a></div>
-            <div class="pass"><a href="payment.php">Buy a pass now</a></div>
+            <div class="pass" ><a href="payment.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="payment.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="payment.php" target="_blank">Buy a pass now</a></div>
         </div>
         </div>
 	    <?php

@@ -1,34 +1,33 @@
-<?php
-echo "<header>
-			<h3 class=\"logo\"><a href=\"index.php\">HSC</a></h3>
-			<div class=\"menu1\">
-				<a href=\"index.php\">Home</a>
-				<a href=\"schedule.php\">Schedule</a>
-				<a href=\"membership.php\">Membership</a>
-				<a href=\"contact.php\">Contact</a>
+
+<header>
+			<h3 class="logo"><a href="index.php">HSC</a></h3>
+			<div class="menu1">
+				<a href="index.php">Home</a>
+				<a href="schedule.php">Schedule</a>
+				<a href="membership.php">Membership</a>
+				<a href="contact.php">Contact</a>
 			</div>
-			<div class=\"login\">
-				<a href=\"signup.php\">Sign Up</a>
-				<a href=\"login.php\">Log In</a>
+			<div class="login">
+				<a href="signup.php">Sign Up</a>
+				<a href="login.php">Log In</a>
 			</div>
-			<section class=\"top-nav\">
-				<div class=\"logo2\">
+			<section class="top-nav">
+				<div class="logo2">
 					<h3> HSC </h3>
 				</div>
-				<input id=\"menu-toggle\" type=\"checkbox\" />
+				<input id="menu-toggle" type="checkbox" />
 
-				<label class='menu-button-container' for=\"menu-toggle\">
+				<label class='menu-button-container' for="menu-toggle">
 					
 				<span class='menu-button'></span>
 				</label>
-				<ul class=\"menu\">
-				  <li><a href=\"index.php\">Home</a></li>
-				  <li><a href=\"membership.php\">Membership</a></li>
-				  <li><a href=\"schedule.php\">Schedule</a></li>
-				  <li><a href=\"contact.php\">Contact</a></li>
-				  <li><a href=\"#\" class=\"reg\">Sign Up</a></li>
-				  <li><a href=\"#\" class=\"reg\">Log In</a></li>
+				<ul class="menu">
+				  <li><a href="index.php">Home</a></li>
+				  <li><a href="membership.php">Membership</a></li>
+				  <li><a href="schedule.php">Schedule</a></li>
+				  <li><a href="contact.php">Contact</a></li>
+				  <li><a href="#" class="reg">Sign Up</a></li>
+				  <li><a href="#" class="reg">Log In</a></li>
 				</ul>
 			  </section>
-		</header> "
-?>
+</header> 
