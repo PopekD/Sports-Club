@@ -7,15 +7,9 @@
 				<a href="membership.php">Membership</a>
 				<a href="contact.php">Contact</a>
 			</div>
-<<<<<<< Updated upstream
-			<div class=\"login\">
-				<a href=\"#\">Sign Up</a>
-				<a href=\"#\">Log In</a>
-=======
 			<div class="login">
 				<a href="signup.php">Sign Up</a>
 				<a href="login.php">Log In</a>
->>>>>>> Stashed changes
 			</div>
 			<section class="top-nav">
 				<div class="logo2">
