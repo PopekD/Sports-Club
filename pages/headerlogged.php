@@ -1,4 +1,3 @@
-
 <header>
 			<h3 class="logo"><a href="index.php">HSC</a></h3>
 			<div class="menu1">
@@ -8,8 +7,7 @@
 				<a href="contact.php">Contact</a>
 			</div>
 			<div class="login">
-				<a href="signup.php">Sign Up</a>
-				<a href="login.php">Log In</a>
+				<a href="logout.php">Log Out</a>
 			</div>
 			<section class="top-nav">
 				<div class="logo2">
@@ -26,8 +24,7 @@
 				  <li><a href="membership.php">Membership</a></li>
 				  <li><a href="schedule.php">Schedule</a></li>
 				  <li><a href="contact.php">Contact</a></li>
-				  <li><a href="#" class="reg">Sign Up</a></li>
-				  <li><a href="#" class="reg">Log In</a></li>
+				  <li><a href="#" class="reg">Log Out</a></li>
 				</ul>
 			  </section>
 </header> 

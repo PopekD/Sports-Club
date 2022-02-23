@@ -74,7 +74,7 @@ a:link {
 	padding: 1em 1em;
 }
 .login > a:hover {
-	color: #c0c0c0;
+	color: #ffffff;
 	transform: scale(1.05);
 }
 
@@ -131,11 +131,21 @@ main {
 	margin-left: 30px;
 }
 
+.lgbutton{
+	padding-left: 90px;
+}
+
+.regbutton{
+	padding-left: 80px;
+}
+
 .operation > .button:nth-child(2):hover {
 	transform: scale(1.1);
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+
 
 h2 {
 	font-size: 3.8em;
@@ -256,6 +266,7 @@ footer {
 	margin-bottom: 20px;
 	margin-left: 100px;
 }
+
 .normalt {
 	font-size: 20px;
 	color: #717171;
@@ -474,6 +485,146 @@ footer {
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+#paybody{
+	background-image: url("images/02.jpg");
+}
+
+.paymain{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100%;
+	padding: 80px 100px;
+	min-height: 100%;
+	margin: 0;
+	
+}
+.pselect{
+	flex: 1;
+	margin-right: 10px;
+	min-height: 80vh;
+	width: 20vw;
+	display: grid;
+	user-select: none;
+	position: relative;
+	border-radius: 11px;
+	background: #f75f88;
+	opacity: 0.96;
+	text-align: center;
+	color: snow;
+	font-size: 1.5em;
+}	
+.pselect:last-child{
+	margin-right: 0;
+}
+.pselect:hover{
+	cursor: pointer;
+	opacity: 0.7;
+	background-color: #262626;
+}
+.pselect:active{
+	background-color: #262626;
+}
+
+#cform{
+	flex-direction: column;
+	width: 30vw;
+	justify-content: center;
+	padding: 70px 20px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+	display: none;
+	color: snow;
+	transform: translateX(120%);
+	background-color: #f75f88;
+}
+
+.sform{
+display: flex;
+flex-direction: row;
+padding-top: 10px;
+width: 100%;
+justify-content: space-evenly;
+}
+#paymentbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+.line{
+	width: 100%;
+	height: 2.5em;
+}
+
+#lgform{
+	flex-direction: column;
+	width: 35vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#lgbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+
+.container-form{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg .header{
+	padding-right: 100px;
+}
+
+#regform{
+	flex-direction: column;
+	width: 50vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#regbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+
+
 @media only screen and (max-width: 1670px) {
 	.logo {
 		margin-right: 40px;
