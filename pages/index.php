@@ -6,22 +6,23 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HSC - the place your body needs</title>
-		</head>
+	</head>
 	<body>
 	<?php
 		include "header.php";                
 	?>
+	<!-- addd -->
 		<main>
 			<div class="content">
-					<h2>Build your body <br />and mind here</h2>
+				<h2>Build your body <br />and mind here</h2>
 				<p class="text">
 					Enjoy modern sports club in the center of Hämeenlinna!<br />
 					We provide gym, two huge pools, saunas and joga places.
 				</p>
 				<div class="operation">
-					<!-- onclick these two buttons will take to the schedule and contact pages: -->
-					<div class="button" onclick="window.location.href='./schedule.php';">Get Started</div>
-					<div class="button" onclick="window.location.href='./contact.php';"> About us</div>
+					
+					<div class="button">Get Started</div>
+					<div class="button">About us</div>
 				</div>
 				<div class="personal"><img src="../images/personal.jpg" alt="personal-trainetrs" /></div>
 			</div>
