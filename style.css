@@ -131,11 +131,21 @@ main {
 	margin-left: 30px;
 }
 
+.lgbutton{
+	padding-left: 90px;
+}
+
+.regbutton{
+	padding-left: 80px;
+}
+
 .operation > .button:nth-child(2):hover {
 	transform: scale(1.1);
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+
 
 h2 {
 	font-size: 3.8em;
@@ -550,6 +560,68 @@ justify-content: space-evenly;
 .line{
 	width: 100%;
 	height: 2.5em;
+}
+
+#lgform{
+	flex-direction: column;
+	width: 35vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#lgbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+
+.container-form{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg .header{
+	padding-right: 100px;
+}
+
+#regform{
+	flex-direction: column;
+	width: 50vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#regbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
 }
 
 
