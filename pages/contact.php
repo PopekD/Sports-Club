@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css" />
     
   <!-- <link rel="stylesheet" href="contact.css"> -->
@@ -20,35 +20,37 @@
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
                 <div class="row">
 
-    <form id="contact-form" name="contact-form" action="form_mail.php" method="POST" >
+    <form id="contact-form" class="contact-form" name="contact-form" action="form_mail.php" method="POST" >
         <div class="row">
             <div class="col-md-6">
                 <div class="md-form mb-0">
-                    <label for="name" class="">Your name</label>
+                    <label for="name" class="">Your name:</label>
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="md-form mb-0">
-                    <label for="email" class="">Your email</label>
+                    <label for="email" class="">Your email:</label>
                     <input type="text" id="email" name="email" class="form-control">
                 </div>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="md-form mb-0">
-                    <label for="subject" class="">Subject</label>
+                    <label for="subject" class="">Subject:</label>
                     <input type="text" id="subject" name="subject" class="form-control">
                     
                 </div>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="md-form">
-                    <label for="message">Your message</label>
-                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <label for="message">Your message:</label>
+                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
                 </div>
             </div>
         </div>

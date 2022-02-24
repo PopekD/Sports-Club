@@ -276,6 +276,11 @@ footer {
 		color: #717171;
 		margin-left: 100px;
 }
+.contact-form {
+    width: 550px;
+    margin: auto;
+	display:inline;
+}
 .BT {
 	display: flex;
 	margin: 30px 0;
