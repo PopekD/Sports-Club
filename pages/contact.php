@@ -18,7 +18,7 @@
             <div class="contactinfo">
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
-                <div class="row">
+
 
     <form id="contact-form" class="contact-form" name="contact-form" action="form_mail.php" method="POST" >
         <div class="row">
@@ -59,7 +59,7 @@
             <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
         </div>
     </form>
-</div>
+
                 <div class="BT">
                         <div class="BT1">E-mail: inquiries@hsc.fi</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
