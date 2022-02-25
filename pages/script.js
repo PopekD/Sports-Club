@@ -1,5 +1,7 @@
+//ANIMATIONS
 $(document).ready(function(){
     $(".pselect:nth-child(1)").click(function(){
+      document.cookie = "index = 1";
       $(".pselect:nth-child(1):hover").css("opacity", "1");
       $(".pselect:nth-child(2), .pselect:nth-child(3)").animate({opacity: '0.00'}, "fast");
       $(".pselect:nth-child(2), .pselect:nth-child(3)").animate({right: '150%'}, "slow");
@@ -11,6 +13,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $(".pselect:nth-child(2)").click(function(){
+      document.cookie = "index = 2";
       $(".pselect:nth-child(2):hover").css("opacity", "1");
       $(".pselect:nth-child(1), .pselect:nth-child(3)").animate({opacity: '0.00'}, "fast");
       $(".pselect:nth-child(1), .pselect:nth-child(3)").animate({right: '150%'}, "slow");
@@ -21,6 +24,7 @@ $(document).ready(function(){
     });
   });
   $(document).ready(function(){
+    document.cookie = "index = 3";
     $(".pselect:nth-child(3)").click(function(){
       $(".pselect:nth-child(3):hover").css("opacity", "1");
       $(".pselect:nth-child(1), .pselect:nth-child(2)").animate({opacity: '0.00'}, "fast");
@@ -38,7 +42,7 @@ $(document).ready(function(){
 
     let Errors = 0;
 
-// CARD NUMBER
+    // CARD NUMBER
   function validateCardNumber() {
 
  
@@ -55,7 +59,7 @@ $(document).ready(function(){
           }
          
   }
-//NAME OF CARD 
+    //NAME OF CARD 
   function validateNameOfCard(){
 
     let nameofcardValue = $('#nameofcard').val();
@@ -67,7 +71,7 @@ $(document).ready(function(){
       return false;
     }
   }
-//EXPIRY DATE
+    //EXPIRY DATE
   function validateExpiryDate(){
     
     var VAL = expirydate.value;
@@ -82,7 +86,7 @@ $(document).ready(function(){
     }
   }
 
-//SECURITY CODE 
+    //SECURITY CODE 
   function validSecurityCode(){
 
     var securitycodeValue = $('#securitycode').val();
@@ -104,3 +108,9 @@ $(document).ready(function(){
     }
   })
 })
+
+//prevent site from resubmiting form after refresh
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+
