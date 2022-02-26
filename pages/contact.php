@@ -23,7 +23,6 @@ $logged_in = isset($_SESSION["username"]);
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
 
-
     <form id="contact-form" class="contact-form" name="contact-form" action="form_mail.php" method="POST" >
         <div class="row">
             <div class="col-md-6">
