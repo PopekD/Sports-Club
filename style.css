@@ -276,6 +276,27 @@ footer {
 		color: #717171;
 		margin-left: 100px;
 }
+/* contact form */
+.contact-form {
+    width: 750px;
+    margin: auto;
+	/* display:flexbox; */
+	
+}
+.btn-primary {
+	width:100px;
+	background-color: #262626;
+	color: #f75f88 !important;
+	border-color: black !important;
+	
+}
+.btn-primary:hover{
+	background-color:#f75f88;
+	color:#eef1f8 !important;
+}
+.btn-primary:focus, .btn-primary:active {
+	background-color: #717171 !important;
+ }
 .BT {
 	display: flex;
 	margin: 30px 0;
