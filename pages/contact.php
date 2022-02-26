@@ -22,6 +22,45 @@ $logged_in = isset($_SESSION["username"]);
             <div class="contactinfo">
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
+                <form id="contact-form" class="contact-form" name="contact-form" action="form_mail.php" method="POST" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="md-form mb-0">
+                    <label for="name" class="">Your name:</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="md-form mb-0">
+                    <label for="email" class="">Your email:</label>
+                    <input type="text" id="email" name="email" class="form-control">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="md-form mb-0">
+                    <label for="subject" class="">Subject:</label>
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="md-form">
+                    <label for="message">Your main message:</label>
+                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        </div>
+    </form>
 
                 <div class="BT">
                         <div class="BT1">E-mail: inquiries@hsc.fi</div>
