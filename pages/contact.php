@@ -61,6 +61,7 @@ $logged_in = isset($_SESSION["username"]);
         <div class="text-center text-md-left">
             <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
         </div>
+        <div class="status"></div>
     </form>
 
                 <div class="BT">
