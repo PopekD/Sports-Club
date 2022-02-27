@@ -283,6 +283,17 @@ footer {
 	/* display:flexbox; */
 	
 }
+
+@media only screen and (max-width: 580px) {
+	#contact-form{
+	   left: 3%;
+	   margin-right: 3%;
+	   width: 88%;
+	   margin-left: 0;
+	   padding-left: 3%;
+	   padding-right: 3%;
+	}
+ }
 .btn-primary {
 	width:100px;
 	background-color: #262626;
