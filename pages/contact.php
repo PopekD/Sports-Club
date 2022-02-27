@@ -10,7 +10,7 @@ $logged_in = isset($_SESSION["username"]);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style.css">
     
       <title>Contact us</title>
 </head>
@@ -22,7 +22,11 @@ $logged_in = isset($_SESSION["username"]);
             <div class="contactinfo">
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
+                
+<div class="row">
 
+
+    <div class="col-md-9 mb-md-0 mb-5">
     <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" >
         <div class="row">
             <div class="col-md-6">
@@ -31,7 +35,7 @@ $logged_in = isset($_SESSION["username"]);
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
             </div>
-            <div class="col-md-6">
+        <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="email" class="">Your email:</label>
                     <input type="text" id="email" name="email" class="form-control">
@@ -60,11 +64,14 @@ $logged_in = isset($_SESSION["username"]);
         <br>
         <div class="text-center text-md-left">
             <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-        </div>
-        <div class="status"></div>
+        </div>   
     </form>
+       
+        <div class="status"></div>
+    </div>
+</div>
 
-                <div class="BT">
+            <div class="BT">
                         <div class="BT1">E-mail: inquiries@hsc.fi</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
                     </div>
