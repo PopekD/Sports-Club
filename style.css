@@ -281,9 +281,7 @@ footer {
     width: 750px;
     margin: auto;
 	/* display:flexbox; */
-	
 }
-
 @media only screen and (max-width: 580px) {
 	#contact-form{
 	   left: 3%;
