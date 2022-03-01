@@ -11,7 +11,7 @@ $logged_in = isset($_SESSION["username"]);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    
+    <script src="cnform_script.js"></script> 
       <title>Contact us</title>
 </head>
 <body>
@@ -28,7 +28,8 @@ $logged_in = isset($_SESSION["username"]);
 
     <div class="col-md-9 mb-md-0 mb-5">
     <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" >
-        <div class="row">
+    <div class="status" id="status" style="color:red"></div><br>
+    <div class="row">
             <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="name" class="">Your name:</label>
@@ -63,11 +64,9 @@ $logged_in = isset($_SESSION["username"]);
         </div>
         <br>
         <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            <a class="btn btn-primary" onclick="validatecnform_();">Send</a>
         </div>   
     </form>
-       
-        <div class="status"></div>
     </div>
 </div>
 
