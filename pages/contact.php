@@ -29,13 +29,13 @@ $logged_in = isset($_SESSION["username"]);
             <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="name" class="">Your name:</label>
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="(required field)">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="email" class="">Your email:</label>
-                    <input type="text" id="email" name="email" class="form-control">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="(e.g. xxx@yyyyy.com)">
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ $logged_in = isset($_SESSION["username"]);
             <div class="col-md-12">
                 <div class="md-form mb-0">
                     <label for="subject" class="">Subject:</label>
-                    <input type="text" id="subject" name="subject" class="form-control">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="(required field)">
                     
                 </div>
             </div>
@@ -54,7 +54,7 @@ $logged_in = isset($_SESSION["username"]);
             <div class="col-md-12">
                 <div class="md-form">
                     <label for="message">Your main message:</label>
-                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="(max 2000 characters)"></textarea>
                 </div>
             </div>
         </div>
