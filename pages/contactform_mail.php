@@ -1,9 +1,7 @@
-<?php include('server.php')?>
-<!-- when send button is clicked,
-form data to email as well as to database will be sent,
-but only one function is working at the moment which is:
-data is moving to database table only
-email function is added but email sending not possible on localhost-->
+<?php
+include('server.php');
+?>
+
 <?php
 if(isset($_POST))
 if(isset( $_POST['name']))
@@ -16,7 +14,7 @@ if(isset( $_POST['message']))
 $message = $_POST['message'];
 
 
-// $content="From: $name \n Email: $email \n Subject: $subject \n Message: $message";
+// $content="From: $name \n Email: $email \n Message: $message";
 // $to = "inquiries.hsc@gmail.com";
 // $mailheader = "From: $email \r\n";
 // mail('inquiries.hsc@gmail.com', $subject, $content, $mailheader) or die("Error!");

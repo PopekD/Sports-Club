@@ -1,0 +1,8 @@
+
+    function pp(){
+    window.alert("Privacy Policy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum eaque reiciendis, atque labore dolorem, officia laborum modi debitis similique minima assumenda dolor necessitatibus totam ipsa a exercitationem porro, obcaecati repellat explicabo voluptates possimus! Ipsa repellendus eum, ut molestiae itaque temporibus quas porro quam ex vitae quisquam est doloribus qui sunt officiis similique aliquid tempore asperiores consectetur voluptates ea praesentium dolor voluptatum laboriosam! Deserunt eos corrupti temporibus expedita iste. Tempora optio rerum molestias impedit nam non distinctio qui aspernatur commodi cum cupiditate maxime voluptates laboriosam reiciendis ipsa iure, ipsum ipsam architecto ea autem? Delectus, dolor dicta quis porro asperiores minus.");
+    }
+	function tu(){
+    window.alert("Terms of Use: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum eaque reiciendis, atque labore dolorem, officia laborum modi debitis similique minima assumenda dolor necessitatibus totam ipsa a exercitationem porro, obcaecati repellat explicabo voluptates possimus! Ipsa repellendus eum, ut molestiae itaque temporibus quas porro quam ex vitae quisquam est doloribus qui sunt officiis similique aliquid tempore asperiores consectetur voluptates ea praesentium dolor voluptatum laboriosam! Deserunt eos corrupti temporibus expedita iste. Tempora optio rerum molestias impedit nam non distinctio qui aspernatur commodi cum cupiditate maxime voluptates laboriosam reiciendis ipsa iure, ipsum ipsam architecto ea autem? Delectus, dolor dicta quis porro asperiores minus.");
+    }
+    
