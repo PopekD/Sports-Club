@@ -3,6 +3,7 @@ include('server.php');
 
 $logged_in = isset($_SESSION["username"]);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +11,9 @@ $logged_in = isset($_SESSION["username"]);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <script src="cnform_script.js"></script> 
-      <title>Contact us</title>
+    <title>Contact us</title>
 </head>
 <body>
     <?php
@@ -22,24 +23,19 @@ $logged_in = isset($_SESSION["username"]);
             <div class="contactinfo">
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
-                
-<div class="row">
-
-
-    <div class="col-md-9 mb-md-0 mb-5">
-    <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" >
-    <div class="status" id="status" style="color:red"></div><br>
-    <div class="row">
+                <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" >
+                <div class="status" id="status" style="color:red"></div><br>
+        <div class="row">
             <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="name" class="">Your name:</label>
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="(required field)">
                 </div>
             </div>
-        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="md-form mb-0">
                     <label for="email" class="">Your email:</label>
-                    <input type="text" id="email" name="email" class="form-control">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="(e.g. xxx@yyyyy.com)">
                 </div>
             </div>
         </div>
@@ -48,7 +44,7 @@ $logged_in = isset($_SESSION["username"]);
             <div class="col-md-12">
                 <div class="md-form mb-0">
                     <label for="subject" class="">Subject:</label>
-                    <input type="text" id="subject" name="subject" class="form-control">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="(required field)">
                     
                 </div>
             </div>
@@ -58,19 +54,17 @@ $logged_in = isset($_SESSION["username"]);
             <div class="col-md-12">
                 <div class="md-form">
                     <label for="message">Your message:</label>
-                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="(max 2000 characters)"></textarea>
                 </div>
             </div>
         </div>
         <br>
         <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="validatecnform_();">Send</a>
-        </div>   
+        <a class="btn btn-primary" onclick="validatecn_form();">Send</a>
+        </div>
     </form>
-    </div>
-</div>
 
-            <div class="BT">
+                <div class="BT">
                         <div class="BT1">E-mail: inquiries@hsc.fi</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
                     </div>
