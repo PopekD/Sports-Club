@@ -23,6 +23,7 @@ $logged_in = isset($_SESSION["username"]);
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
                 <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" >
+                <div class="status" id="status" style="color:red"></div><br>
         <div class="row">
             <div class="col-md-6">
                 <div class="md-form mb-0">
@@ -58,7 +59,7 @@ $logged_in = isset($_SESSION["username"]);
         </div>
         <br>
         <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        <a class="btn btn-primary" onclick="validatecn_form();">Send</a>
         </div>
     </form>
 
