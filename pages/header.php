@@ -10,6 +10,7 @@
 		<?php
 		$logged_in = isset($_SESSION["username"]);
 		if ($logged_in) {
+            echo "<a href='profile.php'>{$_SESSION['username']}</a>";
 			echo "<a href='logout.php'>Log Out</a>";
 		} else {
 			echo "<a href='signup.php'>Sign Up</a>";
