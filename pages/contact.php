@@ -70,7 +70,7 @@ $logged_in = isset($_SESSION["username"]);
                             TikTok:@hsc_fi </p>
                         </div>
                         <div class="SC2">
-                            <p>Instagram:@hsc_fi <br>
+                            <p>Instagram:@hsc_fi<br>
                             Linkedin:@hsc_fi
                             </p>
                         </div>
