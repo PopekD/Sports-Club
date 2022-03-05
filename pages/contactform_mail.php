@@ -1,7 +1,6 @@
 <?php
 include('server.php');
 ?>
-<head><script src="cnform_script.js"></script> </head>
 <?php
 // phpmailer is added to send email from contact form data besides adding it to database
 use PHPMailer\PHPMailer\PHPMailer;
@@ -49,7 +48,7 @@ $mail = new PHPMailer();
     $contactdata2mysql = "INSERT INTO contactus_data VALUES ('0', '$name', '$email', '$subject','$message')";
     $output = mysqli_query($conn, $contactdata2mysql);
     echo "<h3>Thank you for messaging us, we'll contact you soon!</h3>";
-    resetform();
+        
     }
     else
     {
@@ -57,6 +56,7 @@ $mail = new PHPMailer();
         echo $response = "Something is wrong: <br>" . $mail->ErrorInfo;
     }
 
+// simple query without mailer function:
 // $contactdata2mysql = "INSERT INTO contactus_data VALUES ('0', '$name', '$email', '$subject','$message')";
     //query with column names
 // $contactfdata = "INSERT INTO contactus_data (id, c_name, c_email, c_subject, c_message) VALUES ('0', '$name', '$email', '$subject','$message')";
