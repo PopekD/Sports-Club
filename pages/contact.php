@@ -55,7 +55,7 @@ $logged_in = isset($_SESSION["username"]);
 		</form>
 </div>
                 <div class="BT">
-                        <div class="BT1">E-mail: inquiries@hsc.fi</div>
+                        <div class="BT1">inquiries.hsc@gmail.com</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
                     </div>
                     
