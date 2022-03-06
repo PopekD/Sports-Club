@@ -96,6 +96,7 @@ if(isset($_POST['login_user'])) {
             header('location: index.php');
         } else {
             array_push($errors, "Wrong username/password combination. Please try again.");
+            header('location: login.php');
         }
     }
 

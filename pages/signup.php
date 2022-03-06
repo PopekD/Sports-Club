@@ -6,16 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Log In</title>
+
 </head>
 <body>
-    
-    <div class="container">
+    <?php
+		include "header.php";                
+	?>
+    <div class="container-form-reg">
         <div class="header">
             <h2>Register</h2>
         </div>
 
-        <form action="signup.php" method="post">
+        <form id="regform" action="signup.php" method="post">
 
         <?php include ('errors.php') ?>
             <div>
@@ -47,17 +51,16 @@
                 <label for="password">Confirm your password:</label>
                 <input type="password" name="password_2" required>
             </div>
-
-            <button type="submit" name="reg_user">Register</button>
+            <div class="regbutton">
+            <button id="regbutton" type="submit" name="reg_user">Register</button>
+            </div>
 
             <p>Already a user?<a href="login.php"> Log In</a></p>
 
         </form>
-
-
-
     </div>
 
-
+       
+	    
 </body>
 </html>
