@@ -4,7 +4,7 @@ $errors = array();
 
 //connect to db
 
-$conn = mysqli_connect('db', 'root', 'password', 'HSC') or die("could not connect to database");
+$conn = mysqli_connect('db', 'root', 'password', 'hsc') or die("could not connect to database");
 
 //register users
 
