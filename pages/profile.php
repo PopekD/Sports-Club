@@ -20,7 +20,7 @@ $user2 = mysqli_fetch_assoc($results2);
 </head>
 <body>
     <?php
-		include "header.php";                
+		include "header.php";               
 	?>
     <div class="profile-info">
         <div class="header">
