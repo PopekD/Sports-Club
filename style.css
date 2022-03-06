@@ -74,7 +74,7 @@ a:link {
 	padding: 1em 1em;
 }
 .login > a:hover {
-	color: #c0c0c0;
+	color: #ffffff;
 	transform: scale(1.05);
 }
 
@@ -131,11 +131,21 @@ main {
 	margin-left: 30px;
 }
 
+.lgbutton{
+	padding-left: 90px;
+}
+
+.regbutton{
+	padding-left: 80px;
+}
+
 .operation > .button:nth-child(2):hover {
 	transform: scale(1.1);
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+
 
 h2 {
 	font-size: 3.8em;
@@ -256,6 +266,7 @@ footer {
 	margin-bottom: 20px;
 	margin-left: 100px;
 }
+
 .normalt {
 	font-size: 20px;
 	color: #717171;
@@ -265,12 +276,91 @@ footer {
 		color: #717171;
 		margin-left: 100px;
 }
+
+/* contact form */
+
+.contact-form input,   
+.contact-form textarea,   
+.contact-form label { 
+   font-size: 20px;  
+   margin-bottom: 10px;
+}
+.contact-form input {
+	height: 50px;
+}
+.contact-form input,   
+.contact-form textarea { 
+   width:100%;
+   background: #eee2e5;
+   border: inset; 
+   border-radius: 5px;
+   margin-bottom: 25px;  
+   padding: 5px;  
+   border-color: #d39eac;
+} 
+.contact-form textarea {
+	width: 100%;
+	height: 150px;
+ }
+.contact-form input:focus,   
+.contact-form textarea:focus {  
+   background-color: #faf5f7; 
+} 
+ .form-border{
+	 padding-left: 9%; padding-right: 9%;
+ }
+
+.button-freset, .button-freset {
+	font-size: 1.1em !important;
+}
+.button-fsend, .button-freset {
+	font-family: 'Montserrat', sans-serif !important;
+}
+.button-freset {
+	width: 78px !important;
+	height: 39px !important;
+	/* padding: 20px; */
+	margin-left: 10px;
+	/* margin-top: 10px !important; */
+	
+}
+.button-freset {
+	cursor:pointer;
+	border-radius: 5px;
+	background-color: #f75f88 !important;
+	color: snow !important;
+	border:0 !important;
+}
+.button-fsend {
+	cursor:pointer;
+	border-radius: 5px;
+	background-color: #463b3b;
+	color: #f75f88 !important;
+	border-color: black !important;
+	
+}
+.button-freset:hover{
+	background-color:#463b3b !important;
+	color:#f75f88 !important;
+	transition:background-color 0.3s ease-in-out;
+}
+.button-fsend:hover{
+	background-color:#f75f88;
+	color:#eef1f8 !important;
+	transition:background-color 0.3s ease-in-out;
+}
+.button-fsend:focus, .button-fsend:active {
+	background-color: #717171 !important;
+ }
 .BT {
 	display: flex;
-	margin: 30px 0;
+	margin-top: 60px;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
 	
 }
 .BT1{
+	border-radius: 5px;
 	background-color: #f75f88;
 	flex:1;
 	background-size: cover;
@@ -285,6 +375,10 @@ footer {
 .CT{
 	display: flex;
 	align-items: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
 }
 .Office{
 	flex: 2;
@@ -292,25 +386,28 @@ footer {
 }
 .bold{
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: #717171;
 }
 .SC{
 	flex: 1;
-	padding-left:100px;
+	padding-left:9%;
 }
 .SC1{
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: #717171;
+	padding-left: 0%;
 	
 }
 .SC2{
 	flex:1;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: #717171;
 	margin-top: 24px;
+	
+	padding-right: 1.5%;
 }
 .contactimage {
 	align-self: center;
@@ -323,6 +420,17 @@ footer {
 	width: 100%;
 
 }
+/* contact-form responsive */
+@media only screen and (max-width: 580px) {
+	#contact-form{
+	   left: 3%;
+	   margin-right: 3%;
+	   width: 88%;
+	   margin-left: 0;
+	   padding-left: 1%;
+	   padding-right: 1%;
+	}
+ }
 
 /* schedule site */
 .schedulemain{
@@ -474,6 +582,156 @@ footer {
 	background-color: #f75f88;
 	color: #ffffff;
 }
+
+#paybody{
+	background-image: url("images/02.jpg");
+}
+
+.paymain{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100%;
+	padding: 80px 100px;
+	min-height: 100%;
+	margin: 0;
+	
+}
+.pselect{
+	flex: 1;
+	margin-right: 10px;
+	min-height: 80vh;
+	width: 20vw;
+	display: grid;
+	user-select: none;
+	position: relative;
+	border-radius: 11px;
+	background: #f75f88;
+	opacity: 0.96;
+	text-align: center;
+	color: snow;
+	font-size: 1.5em;
+}	
+.pselect:last-child{
+	margin-right: 0;
+}
+.pselect:hover{
+	cursor: pointer;
+	opacity: 0.7;
+	background-color: #262626;
+}
+.pselect:active{
+	background-color: #262626;
+}
+
+#cform{
+	flex-direction: column;
+	width: 30vw;
+	justify-content: center;
+	padding: 70px 20px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+	display: none;
+	color: snow;
+	transform: translateX(120%);
+	background-color: #f75f88;
+}
+
+.sform{
+display: flex;
+flex-direction: row;
+padding-top: 10px;
+width: 100%;
+justify-content: space-evenly;
+}
+#paymentbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+.line{
+	width: 100%;
+	height: 2.5em;
+}
+
+#lgform{
+	flex-direction: column;
+	width: 35vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#lgbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+
+/* login/signup */
+
+.container-form{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.container-form-reg .header{
+	padding-right: 100px;
+}
+
+#regform{
+	flex-direction: column;
+	width: 50vw;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 100px;
+	align-items: baseline;
+	font-size: 2em;
+	position: absolute;
+}
+
+#regbutton{
+	align-self: center;
+	margin: 20px 0px;
+	font-size: 1em;
+	color: snow;
+	background-color: #262626;
+	width: 6em;
+	border-radius: 2em;
+}
+
+/* profile */
+
+.profile-info {
+	padding-top: 100px;
+	width: 100%;
+	padding-left: 550px;
+}
+
+
 @media only screen and (max-width: 1670px) {
 	.logo {
 		margin-right: 40px;

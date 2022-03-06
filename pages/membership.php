@@ -1,3 +1,9 @@
+<?php
+include('server.php');
+
+$logged_in = isset($_SESSION["username"]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +43,26 @@
 
         </div>
 
+        <?php if ($logged_in) { ?>
         <div class="buypass">
-            <div class="pass">Buy a pass now</div>
-            <div class="pass">Buy a pass now</div>
-            <div class="pass">Buy a pass now</div>
+            <div class="pass" ><a href="payment.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="payment.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="payment.php" target="_blank">Buy a pass now</a></div>
         </div>
         </div>
+        <?php  } ?>
+
+        <?php if (!$logged_in) { ?>
+        <div class="buypass">
+            <div class="pass" ><a href="login.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="login.php" target="_blank">Buy a pass now</a></div>
+            <div class="pass"><a href="login.php" target="_blank">Buy a pass now</a></div>
+        </div>
+        </div>
+        <?php  } ?>
+
+
+
 	    <?php
 		include "footer.php";                
 		?>
