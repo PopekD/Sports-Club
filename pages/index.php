@@ -20,7 +20,7 @@ $logged_in = isset($_SESSION["username"]);
     <div class="content">
         <h2>Build your body <br/>and mind here</h2>
         <p class="text">
-            Enjoy modern sports club in the center of HÃ¤meenlinna!<br/>
+            Enjoy modern sports club in the center of Hämeenlinna!<br/>
             We provide gym, two huge pools, saunas and joga places.
         </p>
         <div class="operation">
