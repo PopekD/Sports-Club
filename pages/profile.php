@@ -20,33 +20,34 @@ $mem_price = mysqli_fetch_assoc($results4);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css" />
-    <title>Log In</title>
+    <title>Your Profile</title>
 
 </head>
 <body>
     <?php
 		include "header.php";               
 	?>
+<div class="profilemain">
     <div class="profile-info">
-        <div class="header">
+        <div class="profiledv">
             <h2>Username: <?php echo $user2['username'] ?></h2>
         </div>
-        <div class="header">
+        <div class="profiledv">
             <h3>First name: <?php echo $user2['first_name'] ?></h3>
         </div>
-        <div class="header">
+        <div class="profiledv">
             <h3>Last name: <?php echo $user2['last_name'] ?></h3>
         </div>
-        <div class="header">
+        <div class="profiledv">
             <h3>Email: <?php echo $user2['email']; ?></h3>
         </div>
 
         
         <?php if (!empty($mem)) {
-            ?>  <div class="header">
+            ?>  <div class="profiledv">
             <h3>Current membership price: <?php echo $mem_price['price']; ?> €</h3>
         </div>
-        <div class="header">
+        <div class="profiledv">
             <h3>Current membership duration: <?php echo $mem_price['time']; ?> days</h3>
         </div>
         <?php 
@@ -54,19 +55,20 @@ $mem_price = mysqli_fetch_assoc($results4);
 
 
         <?php if (empty($mem)) {
-            ?>   <div class="header">
+            ?>   <div class="profiledv">
             <h3>Don't have a membership?</h3>
         </div>
-        <div class="buypass">
-            <div class="pass" ><a href="payment.php" target="_blank">Buy a pass now</a></div>
+        <div class="profilebuypass">
+            <div class="profilepass" ><a href="payment.php" target="_blank">Buy a pass now</a></div>
         </div>
         <?php 
         } ?>
        
        
     </div>
+</div>
 
-       
+      <?php include "footer.php"; ?>
 	    
 </body>
 </html>
