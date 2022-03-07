@@ -52,8 +52,8 @@ $mail = new PHPMailer();
     }
     else
     {
-        echo $status = "failed";
-        echo $response = "Something is wrong: <br>" . $mail->ErrorInfo;
+        echo $status2 = "Could not send email.<br> ";
+        echo $response = "Something went wrong.<br> Error: <br>" . $mail->ErrorInfo;
     }
 
 // simple query without mailer function:
