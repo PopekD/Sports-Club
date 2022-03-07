@@ -46,7 +46,17 @@ $mem = mysqli_fetch_assoc($results3);
             $results4 = mysqli_query($conn, "SELECT * FROM mem_types WHERE id = '{$mem['mem_id']}'");
             $mem_price = mysqli_fetch_assoc($results4) ;
             ?>  <div class="profiledv">
-            <h3>Current membership price: <?php echo $mem_price['price']; ?> €</h3>
+                <?php 
+            
+            if( $mem['promo_id'] > 0 ){
+                $actual_price =$mem_price['price'] - ( $mem_price['price']*(20/100) );
+            }else {
+                $actual_price = $mem_price['price'];
+            }
+            
+            ?>
+            <h3>Current membership price: <?php echo $actual_price ?> € </h3>
+
         </div>
         <div class="profiledv">
             <h3>Current membership duration: <?php echo $mem_price['time']; ?> days</h3>
