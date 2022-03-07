@@ -56,7 +56,7 @@ $mem_price = mysqli_fetch_assoc($results4);
 
         <?php if (empty($mem)) {
             ?>   <div class="profiledv">
-            <h3>Don't have a membership?</h3>
+            <h3 style="margin-top: 10px; color:black;">Don't have a membership?</h3>
         </div>
         <div class="profilebuypass">
             <div class="profilepass" ><a href="payment.php" target="_blank">Buy a pass now</a></div>
