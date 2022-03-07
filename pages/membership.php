@@ -23,7 +23,9 @@ $logged_in = isset($_SESSION["username"]);
 </head>
 <body>
     <?php
-		include "header.php";                
+		include "header.php";      
+        
+
 	?>
     <div class="membershipmain">
         <div class="bm">

@@ -63,10 +63,9 @@ $(document).ready(function(){
   function validateNameOfCard(){
 
     let nameofcardValue = $('#nameofcard').val();
-    
 
-    if(nameofcardValue.length == ''){
-      alert("Name of card is empty");
+    if(nameofcardValue.length == '' || nameofcardValue.match(/^\d+$/) ){
+      alert("Invalid Card Name");
       Errors++;
       return false;
     }
