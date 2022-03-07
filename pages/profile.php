@@ -6,8 +6,7 @@ $results2 = mysqli_query($conn, "SELECT * FROM users WHERE username = '{$_SESSIO
 $user2 = mysqli_fetch_assoc($results2);
 $results3 = mysqli_query($conn, "SELECT * FROM membership WHERE user_id = '{$user2['id']}'");
 $mem = mysqli_fetch_assoc($results3);
-$results4 = mysqli_query($conn, "SELECT * FROM mem_types WHERE id = '{$mem['mem_id']}'");
-$mem_price = mysqli_fetch_assoc($results4);
+
 
 
 ?>
@@ -44,6 +43,8 @@ $mem_price = mysqli_fetch_assoc($results4);
 
         
         <?php if (!empty($mem)) {
+            $results4 = mysqli_query($conn, "SELECT * FROM mem_types WHERE id = '{$mem['mem_id']}'");
+            $mem_price = mysqli_fetch_assoc($results4) ;
             ?>  <div class="profiledv">
             <h3>Current membership price: <?php echo $mem_price['price']; ?> €</h3>
         </div>
