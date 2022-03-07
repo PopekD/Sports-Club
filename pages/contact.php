@@ -23,7 +23,7 @@ $logged_in = isset($_SESSION["username"]);
                 <div class="CU">Contact us</div>
                 <p class="normalt1" > Tell us your problem and help us to improve the services:</p>
                 
-                
+                                
 <div class=form-border>
         <form id="contact-form" class="contact-form" name="contact-form" action="contactform_mail.php" method="POST" autocomplete="off" target="_blank">		
 		<br><div class="status" id="status" style="color:red"></div>
@@ -54,7 +54,6 @@ $logged_in = isset($_SESSION["username"]);
 
 		</form>
 </div>
-
                 <div class="BT">
                         <div class="BT1">inquiries.hsc@gmail.com</div>
                         <div class="BT1">Phone: +358 50 4750203</div>
@@ -68,10 +67,10 @@ $logged_in = isset($_SESSION["username"]);
                         <div class="SC">
                             <p class=normalt>HSC in social media:</p>
                             <p class="SC1">Facebook:@hsc_fi <br> 
-                            TikTok:@hsc_fi 
+                            TikTok:@hsc_fi </p>
                         </div>
                         <div class="SC2">
-                            <p>Instagram:@hsc_fi <br>
+                            <p>Instagram:@hsc_fi<br>
                             Linkedin:@hsc_fi
                             </p>
                         </div>
