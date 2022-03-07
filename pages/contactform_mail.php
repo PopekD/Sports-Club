@@ -26,7 +26,7 @@ $mail = new PHPMailer();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
     $mail->Username = "inquiries.hsc@gmail.com";
-    $mail->Password = 'passwordhsc';
+    $mail->Password = 'passwordhsc123';
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
 
@@ -52,8 +52,8 @@ $mail = new PHPMailer();
     }
     else
     {
-        echo $status = "failed";
-        echo $response = "Something is wrong: <br>" . $mail->ErrorInfo;
+        echo $status2 = "Could not send email.<br> ";
+        echo $response = "Something went wrong.<br> Error: <br>" . $mail->ErrorInfo;
     }
 
 // simple query without mailer function:
