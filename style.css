@@ -131,13 +131,7 @@ main {
 	margin-left: 30px;
 }
 
-.lgbutton{
-	padding-left: 90px;
-}
 
-.regbutton{
-	padding-left: 80px;
-}
 
 .operation > .button:nth-child(2):hover {
 	transform: scale(1.1);
@@ -593,14 +587,13 @@ footer {
 	width: 100%;
 	min-height: 100%;
 	padding: 80px 100px;
-	min-height: 100%;
 	margin: 0;
 	
 }
 .pselect{
 	flex: 1;
 	margin-right: 10px;
-	min-height: 80vh;
+	height: 80vh;
 	width: 20vw;
 	display: grid;
 	user-select: none;
@@ -630,7 +623,7 @@ footer {
 	justify-content: center;
 	padding: 70px 20px;
 	align-items: baseline;
-	font-size: 2em;
+	font-size: 1.5em;
 	position: absolute;
 	display: none;
 	color: snow;
@@ -660,16 +653,23 @@ justify-content: space-evenly;
 }
 
 #lgform{
-	flex-direction: column;
-	width: 35vw;
-	justify-content: center;
-	padding-top: 100px;
-	padding-left: 100px;
-	align-items: baseline;
 	font-size: 2em;
-	position: absolute;
+	background-color: #f75f88;
+	min-width: 20%;
+	color: snow;
+	height: 20%;
+	text-align: center;
+	padding: 2%;
 }
 
+.loginput{
+	height: 3em;
+}
+.orform{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
 #lgbutton{
 	align-self: center;
 	margin: 20px 0px;
@@ -684,51 +684,86 @@ justify-content: space-evenly;
 
 .container-form{
 	display: flex;
-	flex-direction: row;
-	padding-top: 50px;
+	flex-direction: column;
 	width: 100%;
-	justify-content: space-evenly;
+	align-items: center;
+	min-height: 100vh;
+	justify-content: center;
 }
 
-.container-form-reg{
-	display: flex;
-	flex-direction: row;
-	padding-top: 50px;
-	width: 100%;
-	justify-content: space-evenly;
-}
 
-.container-form-reg .header{
-	padding-right: 100px;
-}
 
 #regform{
-	flex-direction: column;
-	width: 50vw;
-	justify-content: center;
-	padding-top: 100px;
-	padding-left: 100px;
-	align-items: baseline;
+	text-align: center;
+	min-width: 10%;
+	height: 20%;
+	background-color: #f75f88;
+	color: snow;
+	padding: 2%;
 	font-size: 2em;
-	position: absolute;
+	margin-top: 3%;
 }
 
 #regbutton{
-	align-self: center;
-	margin: 20px 0px;
-	font-size: 1em;
-	color: snow;
-	background-color: #262626;
-	width: 6em;
-	border-radius: 2em;
+	
+		align-self: center;
+		margin: 20px 0px;
+		font-size: 1em;
+		color: snow;
+		background-color: #262626;
+		width: 6em;
+		border-radius: 2em;
+
 }
 
-/* profile */
 
+/* profile */
+.profilemain{
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 80px 0px;
+	margin: 0;
+	justify-content: center;
+}
 .profile-info {
-	padding-top: 100px;
-	width: 100%;
-	padding-left: 550px;
+	text-align: center;
+	min-width: 70vw;
+	max-width: 80vw;
+	height: 20%;
+	background-color: #f75f88;
+	border-radius: 3%;
+	color: snow;
+	padding: 2%;
+	flex: 1;
+	font-size: 1.5em;
+	margin-top: 5%;
+}
+.profilepass{
+	background-color: #262626;
+	color: snow;
+	font-size: 0.8em;
+	width: 10em;
+	height: 3em;
+	margin: 0 85px;
+	margin-top: 35px;
+	padding: 13px 0px;
+	text-align: center;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	user-select: none;
+}
+.profilepass:hover{
+	transform: scale(1.1);
+	background-color: snow;
+	color: #f75f88;
+}
+.profilebuypass{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 
@@ -779,6 +814,7 @@ justify-content: space-evenly;
 	}
 	header {
 		padding: 0 5vw;
+		position: relative;
 	}
 	main {
 		flex-direction: column;
@@ -852,6 +888,8 @@ justify-content: space-evenly;
 	.schedulemain{
 		flex-direction: column;
 	}
+
+
 }
 
 @media only screen and (max-width: 811px) {
@@ -1081,7 +1119,30 @@ h2 {
 	padding: 15px 0px;
 	height: 3em;
 }
+@media only screen and (max-width: 799px){
+	.paymain{
+		flex-direction: column;
+		
+	}
+	.pselect{
+		font-size: auto;
+		padding: 0 5px;
+		margin-top: 20px;
+		width: auto;
+	}
+	#cform{
+		position: relative;
+		width: auto;
+		display: none;
+		font-size: 15px;
+		margin-top: 20px;
+		transform: translateX(0%);
 
+	}
+	.pselect:first-child{
+		margin-top: 0;
+	}
+}
 }
 @media only screen and (max-width: 526px) {
 	h2 {

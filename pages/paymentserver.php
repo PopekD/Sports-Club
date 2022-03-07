@@ -4,6 +4,7 @@ include('db.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
+
     $selection = mysqli_query($conn, " SELECT `id` FROM `users` WHERE `username` = '{$_SESSION['username']}' ");
     $row_rsmQuery = mysqli_fetch_assoc($selection);
     $user_id = $row_rsmQuery['id'];
@@ -33,9 +34,10 @@ $sql ="INSERT INTO `membership` (`user_id`, `mem_id`, `promo_id`, `order_date`, 
 
 
     if(mysqli_query($conn, $sql)){  
+        
     }
-
+     
 mysqli_close($conn);
-
+echo '<meta http-equiv="refresh" content="0;url=profile.php" />';
 }
 ?>

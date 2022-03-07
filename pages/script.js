@@ -1,4 +1,5 @@
 //ANIMATIONS
+if($(window).width() > 900){
 $(document).ready(function(){
     $(".pselect:nth-child(1)").click(function(){
       document.cookie = "index = 1";
@@ -35,6 +36,38 @@ $(document).ready(function(){
       
     });
   });
+
+}else{
+
+  $(document).ready(function(){
+    $(".pselect:nth-child(1)").click(function(){
+      document.cookie = "index = 1";
+      $(".pselect:nth-child(2), .pselect:nth-child(3)").css("display", "none");
+      $(".pselect:nth-child(1)").css("background-color", "#262626");
+      $("form").css("display", "flex");
+     
+});
+  });
+  $(document).ready(function(){
+    $(".pselect:nth-child(2)").click(function(){
+      document.cookie = "index = 2";
+      $(".pselect:nth-child(2)").css("background-color", "#262626");
+      $(".pselect:nth-child(1), .pselect:nth-child(3)").css("display", "none");
+      $("form").css("display", "flex");
+
+    
+    });
+  });
+  $(document).ready(function(){
+    document.cookie = "index = 3";
+    $(".pselect:nth-child(3)").click(function(){
+      $(".pselect:nth-child(3)").css("background-color", "#262626");
+      $(".pselect:nth-child(1), .pselect:nth-child(2)").css("display", "none");
+      $("form").css("display", "flex");
+    });
+  });
+
+}
 
   //form validation
   

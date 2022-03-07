@@ -15,30 +15,29 @@
 		include "header.php";                
 	?>
     <div class="container-form">
-        <div class="header">
-            <h2>Log In</h2>
-        </div>
 
         <form id="lgform" action="signup.php" method="post">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" name="username" required>
+            <div class="orform">
+                <label for="username">Username</label>
+                <input type="text" name="username" required class="loginput">
             </div>
 
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" name="password_1" required>
+            <div class="orform">
+                <label for="password">Password</label>
+                <input type="password" name="password_1" required class="loginput">
             </div>
             <div class="lgbutton">
             <button id="lgbutton" type="submit" name="login_user">Log In</button>
             </div>
 
-            <p>Don't have the account?<a href="signup.php"> Sign Up</a></p>
+            <p>Don't have the account?<a href="signup.php" style = "color:black;"> </br> Sign Up</a></p>
 
         </form>
     </div>
 
-       
+    <?php
+		include "footer.php";                
+		?>
 	    
 </body>
 </html>
